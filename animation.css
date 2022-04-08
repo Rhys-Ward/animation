@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    
+  
+}
+
+.logomain {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* overflow-x: hidden; */
+  opacity: 1;
+  position: absolute;
+  border: 3px blue solid;
+}
+
+.sq1 {
+  border:red solid 3px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  /* position: absolute; */
+  /* margin-bottom: 200px; */
+  z-index: 1;
+}
+.sq2 {
+  /* border: blue 3px solid; */
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin-left: 50px; */
+}
+
+#id1 {
+  height: 100px;
+  width: 100px;
+  /* border: 3px red solid; */
+
+  /* position: fixed; */
+  margin-right: -180px;
+  z-index: 2;
+  animation: leftslide 3s ease-in-out;
+}
+
+@keyframes leftslide {
+  from {
+    margin-right: 110%;
+  }
+  to {
+    margin-right: -180px;
+  }
+}
+#id2 {
+  height: 100px;
+  width: 100px;
+  /* border: 3px red solid; */
+  z-index: 3;
+  margin-left: 160px;
+  animation: rightslide 3s ease-in-out;
+}
+
+@keyframes rightslide {
+  from {
+    margin-left: 110%;
+  }
+  to {
+    margin-left: 160px;
+  }
+}
+
+#id3 {
+  height: 30px;
+  width: 200px;
+  /* border: 3px red solid; */
+  opacity: 1;
+  animation: fade1 3s ease;
+}
+@keyframes fade1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#id4 {
+  height: 30px;
+  width: 200px;
+  /* border: 3px red solid; */
+  opacity: 1;
+  /* animation: fade1 ease 3s; */
+  animation: spinshrink 3s;
+}
+
+@keyframes spinshrink {
+  from {
+    transform: scale(1);
+    transform: rotate(0deg);
+  }
+  to {
+    transform: scale(0.3);
+    transform: rotate(360deg);
+  }
+}
+/* MAIN PAGE */
+.main1{
+    width: 100%;
+    height: 100%;
+   opacity: 1;
+ 
+    color: rgb(158, 45, 45);
+}
